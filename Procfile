@@ -1,1 +1,1 @@
-  web: sudo java -jar target/example-0.0.1-SNAPSHOT.jar
+web: java -cp target/classes/:target/dependency/* com.wedevol.xmpp.EntryPoint
