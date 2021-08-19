@@ -1,1 +1,1 @@
-web: java -cp target/classes/:target/dependency/* com.wedevol.xmpp.EntryPoint
+web: java -jar target/classes/:target/dependency/* com.wedevol.xmpp.EntryPoint
