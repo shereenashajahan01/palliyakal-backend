@@ -136,6 +136,7 @@
 		</dependency>
 		</dependencies>
 	<build>
+		<finalName>palliyakal-backend</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -148,9 +149,6 @@
 					<useFile>false</useFile>
 				</configuration>
 			</plugin>
-			
-			<finalName>palliyakal-backend</finalName>
-		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
