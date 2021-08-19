@@ -1,0 +1,37 @@
+{
+	"parameters": [
+	
+		{
+			"name": "qr",
+			"type": "String",
+			"validation":[],
+			"nullable":false
+		},
+		{
+			"name": "a",
+			"type": "String",
+			"validation":[],
+			"nullable":false
+		},
+		{
+			"name": "code",
+			"type": "String",
+			"validation":[],
+			"nullable":false
+		}
+		
+	],
+	"functions": [
+		{
+			"params": [
+			    "qr",
+			    "a",
+			    "code"
+			   		
+			],
+			"class": "com.brandanswers.dashboard.funson.PalliyakalManager",
+			"name": "insertQR",
+			"db": "insertQR"
+		}
+	]
+	}

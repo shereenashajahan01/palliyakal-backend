@@ -1,0 +1,12 @@
+{
+	"parameters": [
+	
+	],
+	"functions": [
+		{
+			"class": "com.brandanswers.dashboard.funson.PalliyakalManager",
+			"name": "searchCustomerDetails",
+			"db": "searchCustomerDetails"
+		}
+	]
+}

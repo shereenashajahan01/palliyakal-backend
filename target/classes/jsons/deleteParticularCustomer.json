@@ -1,0 +1,42 @@
+{
+	"parameters": [
+		{
+				"name": "date",
+				"type": "Date",
+				"validation":[],
+			    "nullable":false
+			},
+			{
+				"name": "product",
+				"type": "String",
+				"validation":[],
+			    "nullable":false
+			},
+			{
+				"name": "shgArea",
+				"type": "String",
+				"validation":[],
+			    "nullable":false
+			},
+			{
+				"name": "farmername",
+				"type": "String",
+				"validation":[],
+			    "nullable":false
+			}
+	],
+	"functions": [
+		{
+			"params": [
+				"date",
+				"product",
+				"shgArea",
+				"farmername"
+			   
+			],
+			"class": "com.brandanswers.dashboard.funson.PalliyakalManager",
+			"name": "deleteParticularCustomer",
+			"db": "deleteParticularCustomer"
+		}
+	]
+}
