@@ -55,8 +55,8 @@ public class PostgresDataManager implements IDataManager<ResultSet> {
 	private PreparedStatement preparedStatement;
 	@PostConstruct
 	private void init() throws SQLException {
-		 connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/brandanswersDB",
-				"postgres", "postgres");
+		 connection = DriverManager.getConnection("jdbc:postgresql://ec2-54-236-234-167.compute-1.amazonaws.com:5432/d39cb45mc3515o",
+				"uylfmxxnrabzct", "32f328d4b8822b369bb7117c1aadf5aeeda9abcf7518818356772a427212b4c2");
 		System.out.println(connection);
 	}
 	@Override
