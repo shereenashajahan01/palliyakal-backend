@@ -62,7 +62,7 @@ public class ResetController extends BaseController {
 			org.json.simple.JSONObject responseData = convertToSimpleJsonObject(
 					this.engine.processRequest(obj, "forgotPassword"));
 
-			String resetLink = "http://localhost:4200/" + "/reset-password?token=" + token;
+			String resetLink = "https://palliyakal.herokuapp.com" + "/reset-password?token=" + token;
 			sendEmail(username, resetLink);
 			return ResponseEntity.ok(responseData);
 		}
