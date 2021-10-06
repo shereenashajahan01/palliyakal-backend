@@ -41,10 +41,11 @@ public class PalliyakalController extends BaseController {
 		org.json.JSONObject message = new org.json.JSONObject();
 		String filePath = "";
 		System.out.println(file.getContentType());
-		if (!file.isEmpty() && file.getContentType().equals("text/csv")) {
+		if (!file.isEmpty()) {
 			filePath = FilesStorageService.save(file);
 			message.put(file.getOriginalFilename(), "Uploaded the file successfully");
 		}
+		
 		org.json.JSONObject params = getParams(customQuery);
 		params.put("file", filePath);
 		org.json.JSONObject responseData = this.engine.processRequest(params, "uploadFile");
